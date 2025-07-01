@@ -1,0 +1,47 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="https://github.com/avaloniaui"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:CyberFileExplorerAvalonia.ViewModels"
+        xmlns:engine="clr-namespace:CyberFileExplorerAvalonia.Engine"
+        x:Class="CyberFileExplorerAvalonia.Views.MainWindow"
+        Width="1600" Height="900"
+        Title="Cyber File Explorer"
+        Background="Black"
+        mc:Ignorable="d">
+
+	<Window.DataContext>
+		<vm:MainWindowViewModel/>
+	</Window.DataContext>
+
+	<DockPanel>
+
+		<!-- Top toolbar -->
+		<StackPanel Orientation="Horizontal"
+					DockPanel.Dock="Top"
+					Background="#222"
+					Height="50"
+					VerticalAlignment="Top">
+
+			<Button x:Name="BackButton"
+					Content="← Back"
+					Width="100"
+					Margin="10,10,10,10"
+					VerticalAlignment="Center" />
+
+			<TextBlock Text="{Binding CurrentPath}"
+					   Foreground="White"
+					   VerticalAlignment="Center"
+					   FontSize="16"
+					   Margin="10,0,0,0" />
+		</StackPanel>
+
+		<!-- 3D Scene area -->
+		<engine:SceneView x:Name="SceneCanvas"
+						  Background="Black"
+						  Focusable="True" />
+	</DockPanel>
+	<Grid>
+		<engine:SceneView x:Name="SceneCanvas"/>
+	</Grid>
+</Window>

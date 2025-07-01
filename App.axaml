@@ -1,0 +1,13 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:views="clr-namespace:CyberFileExplorerAvalonia.Views"
+             x:Class="CyberFileExplorerAvalonia.App"
+             RequestedThemeVariant="Default">
+
+	<Application.Styles>
+		<FluentTheme />
+	</Application.Styles>
+	<Application.MainWindow>
+		<views:MainWindow />
+	</Application.MainWindow>
+</Application>
