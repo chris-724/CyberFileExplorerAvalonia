@@ -40,8 +40,5 @@
 		<engine:SceneView x:Name="SceneCanvas"
 						  Background="Black"
 						  Focusable="True" />
-	</DockPanel>
-	<Grid>
-		<engine:SceneView x:Name="SceneCanvas"/>
-	</Grid>
+        </DockPanel>
 </Window>
