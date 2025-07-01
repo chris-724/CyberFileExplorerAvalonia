@@ -23,6 +23,7 @@ namespace CyberFileExplorerAvalonia.Views
 
             // Safely assign scene and back button handlers
             _sceneView = this.FindControl<SceneView>("SceneCanvas");
+            _sceneView?.Focus();
 
             var backButton = this.FindControl<Button>("BackButton");
             if (backButton is not null)

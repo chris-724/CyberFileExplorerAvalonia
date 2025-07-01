@@ -7,7 +7,4 @@
 	<Application.Styles>
 		<FluentTheme />
 	</Application.Styles>
-	<Application.MainWindow>
-		<views:MainWindow />
-	</Application.MainWindow>
 </Application>
